@@ -14,7 +14,7 @@ namespace MiniLibraryManagementSystem.Data
         public DbSet<RefreshToken> RefreshTokens { get; set; }  
         public DbSet<Favorite> Favorites { get; set; }
 
-        public ApplicationDbContext(DbContextOptions options ) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
 
         }
